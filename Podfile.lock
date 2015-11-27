@@ -1,0 +1,10 @@
+PODS:
+  - Turnstile (1.0.0)
+
+DEPENDENCIES:
+  - Turnstile
+
+SPEC CHECKSUMS:
+  Turnstile: 742117336e7fd09bb91769b922d400a936d6fd43
+
+COCOAPODS: 0.39.0

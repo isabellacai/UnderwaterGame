@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		191ED58B9CBCC2C59CB68B8D9723003A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6AB6C3057B7AE93BA223FC7C95296B /* Event.swift */; };
+		21E53C1751B6E74CDA787EA3FA1A8A30 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01924F11C38D341998A91E66DD9D77B /* State.swift */; };
+		30B6409E0DCEAED3D19FFB09EFCE4D0F /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4BDFD35C5FF2A6AACAFDE41D6CF9CB /* Transition.swift */; };
+		355D8A1CA924A82C9544A6A544831186 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		49A8D16FCF1EC9E722A25C5553B9E87F /* Turnstile-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 23160076095F74162425A756D858F7E3 /* Turnstile-dummy.m */; };
+		5BA644B49077FCD60E36FDAB131E801C /* Pods-Underwater Unknown-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C22776B7557078C8599BF82260BDD9C6 /* Pods-Underwater Unknown-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		918CA282A97414AE19FD1F5806AE6D0E /* StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7810DF76EE1442F3FFE4476E5C744F3 /* StateMachine.swift */; };
+		A10B63EA7EF133F99066FE804B8D0694 /* Turnstile.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 13128177A1AAD766BBFE68142E04D778 /* Turnstile.bundle */; };
+		A3262AAEA02F735C5A9951775B790727 /* Turnstile-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BE8DDD227F4717841C03D0269B83FC1 /* Turnstile-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC47CE51FA5BD078B8603BD6A5EF8E28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		E5998354EEEE0F22FDC6149CBBE1EF1A /* Pods-Underwater Unknown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DBAE818D3AE927804F111BB8B593BBF4 /* Pods-Underwater Unknown-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B545248EFA0ADB286E7DB120A9CF9FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33104C87E6FAC8C875CD58ECB4C6DDED;
+			remoteInfo = "Turnstile-Turnstile";
+		};
+		F1709B541919359F95BC848981A15FF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B36658F8A80949D298E34AE7892DD0A;
+			remoteInfo = Turnstile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A50B22E89B002448BA4AFDA779C3B80 /* Turnstile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Turnstile.xcconfig; sourceTree = "<group>"; };
+		0AE56819CA7E9EB4F1E0CE3C1D8CAD4A /* Turnstile-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Turnstile-prefix.pch"; sourceTree = "<group>"; };
+		13128177A1AAD766BBFE68142E04D778 /* Turnstile.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Turnstile.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BE8DDD227F4717841C03D0269B83FC1 /* Turnstile-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Turnstile-umbrella.h"; sourceTree = "<group>"; };
+		1C32979162A7ECE773842D0D25D5A3F4 /* Pods-Underwater Unknown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Underwater Unknown.debug.xcconfig"; sourceTree = "<group>"; };
+		1D2EF80774302FEAFBA8D00ADA2AD6C5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23160076095F74162425A756D858F7E3 /* Turnstile-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Turnstile-dummy.m"; sourceTree = "<group>"; };
+		3DE93118E2C03535EC6BA8CE74B6AB8C /* Pods-Underwater Unknown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Underwater Unknown.release.xcconfig"; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		489485CB8F705EA2E24B46EEA53EF83B /* Pods-Underwater Unknown-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Underwater Unknown-frameworks.sh"; sourceTree = "<group>"; };
+		499C5A99686BAC9A3E282B8A1FA9E210 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AEBB4AA7FA9F3AE46D47EBDC446306C /* Pods-Underwater Unknown-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Underwater Unknown-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6D6AB6C3057B7AE93BA223FC7C95296B /* Event.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Pod/Classes/Event.swift; sourceTree = "<group>"; };
+		6F8B13939099DBA7B11402A270BEBF3C /* Pods_Underwater_Unknown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Underwater_Unknown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A01924F11C38D341998A91E66DD9D77B /* State.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = State.swift; path = Pod/Classes/State.swift; sourceTree = "<group>"; };
+		A71E957126B6A5A81CDD24B5CF29D40E /* Pods-Underwater Unknown-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Underwater Unknown-acknowledgements.plist"; sourceTree = "<group>"; };
+		A7810DF76EE1442F3FFE4476E5C744F3 /* StateMachine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StateMachine.swift; path = Pod/Classes/StateMachine.swift; sourceTree = "<group>"; };
+		B15175B3FCA283D3B1EF2EBB45950A87 /* Turnstile.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Turnstile.modulemap; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C22776B7557078C8599BF82260BDD9C6 /* Pods-Underwater Unknown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Underwater Unknown-umbrella.h"; sourceTree = "<group>"; };
+		C4A85B9D08334695F3EF27B608045350 /* Pods-Underwater Unknown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Underwater Unknown.modulemap"; sourceTree = "<group>"; };
+		DB4BDFD35C5FF2A6AACAFDE41D6CF9CB /* Transition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transition.swift; path = Pod/Classes/Transition.swift; sourceTree = "<group>"; };
+		DBAE818D3AE927804F111BB8B593BBF4 /* Pods-Underwater Unknown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Underwater Unknown-dummy.m"; sourceTree = "<group>"; };
+		DFE3992FCD3DD2E6E90F5692936600F1 /* Pods-Underwater Unknown-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Underwater Unknown-resources.sh"; sourceTree = "<group>"; };
+		E3A688682535EAB0356541E002601B3E /* Turnstile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Turnstile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66D6BB6A30A1C2BD8FD0D073E386132A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC47CE51FA5BD078B8603BD6A5EF8E28 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A61192DFA10EA5FABD837723DCAF6389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E62FEC4E18DACC025C02C9A0F880380A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				355D8A1CA924A82C9544A6A544831186 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48C9AA9FFCC8E35836B6496A60B666DC /* Turnstile */ = {
+			isa = PBXGroup;
+			children = (
+				6D6AB6C3057B7AE93BA223FC7C95296B /* Event.swift */,
+				A01924F11C38D341998A91E66DD9D77B /* State.swift */,
+				A7810DF76EE1442F3FFE4476E5C744F3 /* StateMachine.swift */,
+				DB4BDFD35C5FF2A6AACAFDE41D6CF9CB /* Transition.swift */,
+				B351F578E74561DC154FD76AE1DDF606 /* Support Files */,
+			);
+			path = Turnstile;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				DCBEDFE4B5401987EC6F89EBCA7672E1 /* Pods */,
+				C48E729E897E93EAF61C7359104FD753 /* Products */,
+				A21B875C687EF7185976638D20A0497B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8D5962ED3115679DBA17D812ADABE77A /* Pods-Underwater Unknown */ = {
+			isa = PBXGroup;
+			children = (
+				499C5A99686BAC9A3E282B8A1FA9E210 /* Info.plist */,
+				C4A85B9D08334695F3EF27B608045350 /* Pods-Underwater Unknown.modulemap */,
+				4AEBB4AA7FA9F3AE46D47EBDC446306C /* Pods-Underwater Unknown-acknowledgements.markdown */,
+				A71E957126B6A5A81CDD24B5CF29D40E /* Pods-Underwater Unknown-acknowledgements.plist */,
+				DBAE818D3AE927804F111BB8B593BBF4 /* Pods-Underwater Unknown-dummy.m */,
+				489485CB8F705EA2E24B46EEA53EF83B /* Pods-Underwater Unknown-frameworks.sh */,
+				DFE3992FCD3DD2E6E90F5692936600F1 /* Pods-Underwater Unknown-resources.sh */,
+				C22776B7557078C8599BF82260BDD9C6 /* Pods-Underwater Unknown-umbrella.h */,
+				1C32979162A7ECE773842D0D25D5A3F4 /* Pods-Underwater Unknown.debug.xcconfig */,
+				3DE93118E2C03535EC6BA8CE74B6AB8C /* Pods-Underwater Unknown.release.xcconfig */,
+			);
+			name = "Pods-Underwater Unknown";
+			path = "Target Support Files/Pods-Underwater Unknown";
+			sourceTree = "<group>";
+		};
+		A21B875C687EF7185976638D20A0497B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8D5962ED3115679DBA17D812ADABE77A /* Pods-Underwater Unknown */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B351F578E74561DC154FD76AE1DDF606 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D2EF80774302FEAFBA8D00ADA2AD6C5 /* Info.plist */,
+				B15175B3FCA283D3B1EF2EBB45950A87 /* Turnstile.modulemap */,
+				0A50B22E89B002448BA4AFDA779C3B80 /* Turnstile.xcconfig */,
+				23160076095F74162425A756D858F7E3 /* Turnstile-dummy.m */,
+				0AE56819CA7E9EB4F1E0CE3C1D8CAD4A /* Turnstile-prefix.pch */,
+				1BE8DDD227F4717841C03D0269B83FC1 /* Turnstile-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Turnstile";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C48E729E897E93EAF61C7359104FD753 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F8B13939099DBA7B11402A270BEBF3C /* Pods_Underwater_Unknown.framework */,
+				13128177A1AAD766BBFE68142E04D778 /* Turnstile.bundle */,
+				E3A688682535EAB0356541E002601B3E /* Turnstile.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCBEDFE4B5401987EC6F89EBCA7672E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48C9AA9FFCC8E35836B6496A60B666DC /* Turnstile */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		54AF685E1B524B7630F95535503A69EC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BA644B49077FCD60E36FDAB131E801C /* Pods-Underwater Unknown-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B37A823E5AC7D2E44A7E6844DEF660B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3262AAEA02F735C5A9951775B790727 /* Turnstile-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		33104C87E6FAC8C875CD58ECB4C6DDED /* Turnstile-Turnstile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA88B1CA9712BD82E76AA3FDD583C719 /* Build configuration list for PBXNativeTarget "Turnstile-Turnstile" */;
+			buildPhases = (
+				73860D1C4DA27129B93493D42FAD33DB /* Sources */,
+				A61192DFA10EA5FABD837723DCAF6389 /* Frameworks */,
+				E2322DAF89458044477989CF95AB3260 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Turnstile-Turnstile";
+			productName = "Turnstile-Turnstile";
+			productReference = 13128177A1AAD766BBFE68142E04D778 /* Turnstile.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		5B36658F8A80949D298E34AE7892DD0A /* Turnstile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A123DE296EC0932992DDD014647E0E68 /* Build configuration list for PBXNativeTarget "Turnstile" */;
+			buildPhases = (
+				12E52DA3BBD3F4F0E23BD18911533343 /* Sources */,
+				66D6BB6A30A1C2BD8FD0D073E386132A /* Frameworks */,
+				7F51BDD675071311BB6B78D9F37D90A2 /* Resources */,
+				9B37A823E5AC7D2E44A7E6844DEF660B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				495D964BC962EDBDFA05A129C75B6340 /* PBXTargetDependency */,
+			);
+			name = Turnstile;
+			productName = Turnstile;
+			productReference = E3A688682535EAB0356541E002601B3E /* Turnstile.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FA49C35335C88B7CF850557661FFF593 /* Pods-Underwater Unknown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE7AF2BABF62A16BE67A1194D56D3090 /* Build configuration list for PBXNativeTarget "Pods-Underwater Unknown" */;
+			buildPhases = (
+				71B4013B0EDDE83AE8A802DB6233DE27 /* Sources */,
+				E62FEC4E18DACC025C02C9A0F880380A /* Frameworks */,
+				54AF685E1B524B7630F95535503A69EC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74B205CA68BB8E0C5E6E7BCEB552B509 /* PBXTargetDependency */,
+			);
+			name = "Pods-Underwater Unknown";
+			productName = "Pods-Underwater Unknown";
+			productReference = 6F8B13939099DBA7B11402A270BEBF3C /* Pods_Underwater_Unknown.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = C48E729E897E93EAF61C7359104FD753 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA49C35335C88B7CF850557661FFF593 /* Pods-Underwater Unknown */,
+				5B36658F8A80949D298E34AE7892DD0A /* Turnstile */,
+				33104C87E6FAC8C875CD58ECB4C6DDED /* Turnstile-Turnstile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F51BDD675071311BB6B78D9F37D90A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10B63EA7EF133F99066FE804B8D0694 /* Turnstile.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2322DAF89458044477989CF95AB3260 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12E52DA3BBD3F4F0E23BD18911533343 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				191ED58B9CBCC2C59CB68B8D9723003A /* Event.swift in Sources */,
+				21E53C1751B6E74CDA787EA3FA1A8A30 /* State.swift in Sources */,
+				918CA282A97414AE19FD1F5806AE6D0E /* StateMachine.swift in Sources */,
+				30B6409E0DCEAED3D19FFB09EFCE4D0F /* Transition.swift in Sources */,
+				49A8D16FCF1EC9E722A25C5553B9E87F /* Turnstile-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71B4013B0EDDE83AE8A802DB6233DE27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5998354EEEE0F22FDC6149CBBE1EF1A /* Pods-Underwater Unknown-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73860D1C4DA27129B93493D42FAD33DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		495D964BC962EDBDFA05A129C75B6340 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Turnstile-Turnstile";
+			target = 33104C87E6FAC8C875CD58ECB4C6DDED /* Turnstile-Turnstile */;
+			targetProxy = 4B545248EFA0ADB286E7DB120A9CF9FA /* PBXContainerItemProxy */;
+		};
+		74B205CA68BB8E0C5E6E7BCEB552B509 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Turnstile;
+			target = 5B36658F8A80949D298E34AE7892DD0A /* Turnstile */;
+			targetProxy = F1709B541919359F95BC848981A15FF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09FCA803380C3CF10D262729AC343C7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A50B22E89B002448BA4AFDA779C3B80 /* Turnstile.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = Turnstile;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		0A4245FF64EEA507E7086488AF3EF5DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A50B22E89B002448BA4AFDA779C3B80 /* Turnstile.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Turnstile/Turnstile-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Turnstile/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Turnstile/Turnstile.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Turnstile;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C293B28F2732CF752B883FFE02BA7309 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A50B22E89B002448BA4AFDA779C3B80 /* Turnstile.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Turnstile/Turnstile-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Turnstile/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Turnstile/Turnstile.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Turnstile;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C3C74BCEE70B82763340DFC4E2AAC7D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DE93118E2C03535EC6BA8CE74B6AB8C /* Pods-Underwater Unknown.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Underwater Unknown/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Underwater Unknown/Pods-Underwater Unknown.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Underwater_Unknown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D0AD597724F482011EAC4C76C18AA848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C32979162A7ECE773842D0D25D5A3F4 /* Pods-Underwater Unknown.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Underwater Unknown/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Underwater Unknown/Pods-Underwater Unknown.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Underwater_Unknown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E393EB9423085B28F7B6D1D47D55823C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A50B22E89B002448BA4AFDA779C3B80 /* Turnstile.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = Turnstile;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A123DE296EC0932992DDD014647E0E68 /* Build configuration list for PBXNativeTarget "Turnstile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A4245FF64EEA507E7086488AF3EF5DE /* Debug */,
+				C293B28F2732CF752B883FFE02BA7309 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE7AF2BABF62A16BE67A1194D56D3090 /* Build configuration list for PBXNativeTarget "Pods-Underwater Unknown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0AD597724F482011EAC4C76C18AA848 /* Debug */,
+				C3C74BCEE70B82763340DFC4E2AAC7D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA88B1CA9712BD82E76AA3FDD583C719 /* Build configuration list for PBXNativeTarget "Turnstile-Turnstile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E393EB9423085B28F7B6D1D47D55823C /* Debug */,
+				09FCA803380C3CF10D262729AC343C7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_Underwater_Unknown {
+  umbrella header "Pods-Underwater Unknown-umbrella.h"
+
+  export *
+  module * { export * }
+}

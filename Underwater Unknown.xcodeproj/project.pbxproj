@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E8B675CFC13436D44217032 /* Pods_Underwater_Unknown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43137695B4350A35AAE021EB /* Pods_Underwater_Unknown.framework */; };
 		7C84BE901C0834D600A7BA15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C84BE8F1C0834D600A7BA15 /* AppDelegate.swift */; };
 		7C84BE921C0834D600A7BA15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C84BE911C0834D600A7BA15 /* ViewController.swift */; };
 		7C84BE951C0834D600A7BA15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C84BE931C0834D600A7BA15 /* Main.storyboard */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B24379A4F233C4232DEA76A /* Pods-Underwater Unknown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Underwater Unknown.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Underwater Unknown/Pods-Underwater Unknown.debug.xcconfig"; sourceTree = "<group>"; };
+		43137695B4350A35AAE021EB /* Pods_Underwater_Unknown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Underwater_Unknown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C84BE8C1C0834D600A7BA15 /* Underwater Unknown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Underwater Unknown.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C84BE8F1C0834D600A7BA15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C84BE911C0834D600A7BA15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		7C84BEAB1C0834D600A7BA15 /* Underwater UnknownUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Underwater UnknownUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C84BEAF1C0834D600A7BA15 /* Underwater_UnknownUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Underwater_UnknownUITests.swift; sourceTree = "<group>"; };
 		7C84BEB11C0834D600A7BA15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A2A72EDB38CF545BA9CCBAB /* Pods-Underwater Unknown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Underwater Unknown.release.xcconfig"; path = "Pods/Target Support Files/Pods-Underwater Unknown/Pods-Underwater Unknown.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E8B675CFC13436D44217032 /* Pods_Underwater_Unknown.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		251F676351462CF5C77CB94A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43137695B4350A35AAE021EB /* Pods_Underwater_Unknown.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7C84BE831C0834D600A7BA15 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +94,8 @@
 				7C84BEA31C0834D600A7BA15 /* Underwater UnknownTests */,
 				7C84BEAE1C0834D600A7BA15 /* Underwater UnknownUITests */,
 				7C84BE8D1C0834D600A7BA15 /* Products */,
+				F3F87808C0368D0BDAFACFF3 /* Pods */,
+				251F676351462CF5C77CB94A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +140,15 @@
 			path = "Underwater UnknownUITests";
 			sourceTree = "<group>";
 		};
+		F3F87808C0368D0BDAFACFF3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B24379A4F233C4232DEA76A /* Pods-Underwater Unknown.debug.xcconfig */,
+				8A2A72EDB38CF545BA9CCBAB /* Pods-Underwater Unknown.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C84BEB41C0834D600A7BA15 /* Build configuration list for PBXNativeTarget "Underwater Unknown" */;
 			buildPhases = (
+				C460F05E709DEB08D78FB68A /* Check Pods Manifest.lock */,
 				7C84BE881C0834D600A7BA15 /* Sources */,
 				7C84BE891C0834D600A7BA15 /* Frameworks */,
 				7C84BE8A1C0834D600A7BA15 /* Resources */,
+				CC3EEBE2AD55F1401C7313C5 /* Embed Pods Frameworks */,
+				A03C2C256123E1AD89D9F369 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,6 +276,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A03C2C256123E1AD89D9F369 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Underwater Unknown/Pods-Underwater Unknown-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C460F05E709DEB08D78FB68A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CC3EEBE2AD55F1401C7313C5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Underwater Unknown/Pods-Underwater Unknown-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7C84BE881C0834D600A7BA15 /* Sources */ = {
@@ -394,6 +469,7 @@
 		};
 		7C84BEB51C0834D600A7BA15 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B24379A4F233C4232DEA76A /* Pods-Underwater Unknown.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Underwater Unknown/Info.plist";
@@ -405,6 +481,7 @@
 		};
 		7C84BEB61C0834D600A7BA15 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A2A72EDB38CF545BA9CCBAB /* Pods-Underwater Unknown.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Underwater Unknown/Info.plist";
@@ -481,6 +558,7 @@
 				7C84BEB61C0834D600A7BA15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C84BEB71C0834D600A7BA15 /* Build configuration list for PBXNativeTarget "Underwater UnknownTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +567,7 @@
 				7C84BEB91C0834D600A7BA15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C84BEBA1C0834D600A7BA15 /* Build configuration list for PBXNativeTarget "Underwater UnknownUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +576,7 @@
 				7C84BEBC1C0834D600A7BA15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
